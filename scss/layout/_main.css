@@ -94,6 +94,10 @@ body {
       color: white;
       width: 100%;
       border: none; }
+      #popup form button:hover {
+        background: #FF8087;
+        cursor: pointer;
+        transition: .3s; }
   #popup .close {
     position: absolute;
     right: -5px;
@@ -116,5 +120,11 @@ body {
       transform: rotate(45deg); }
     #popup .close:after {
       transform: rotate(-45deg); }
+  #popup div[id*='validation'] {
+    margin: 0 10px;
+    color: red;
+    font-size: 13px; }
+    #popup div[id*='validation'][id*='check-box'] {
+      margin-top: 15px; }
 
 /*# sourceMappingURL=_main.css.map */

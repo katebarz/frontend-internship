@@ -119,6 +119,12 @@ body {
             color: white;
             width: 100%;
             border: none;
+
+            &:hover {
+                background: #FF8087;
+                cursor: pointer;
+                transition: .3s;
+            }
         }
     }
 
@@ -155,4 +161,12 @@ body {
         }
     }
 
+    div[id*='validation'] {
+        margin: 0 10px;
+        color: red;
+        font-size: 13px;
+        &[id*='check-box']{
+          margin-top:15px;
+        }
+    }
 }
