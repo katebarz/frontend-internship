@@ -12,11 +12,20 @@ document.getElementById('close').onclick = function() {
     document.getElementById("show-popup-form").style.display = "block";
 }
 document.getElementById("button").onclick = function() {
-    let massage;
-    document.forms['frm'].login.value === "" ? massage = 'Please enter your login' : massage = '';
-    document.getElementById("validation-login").innerHTML = massage;
-    document.forms['frm'].password.value === "" ? massage = 'Please enter your password' : massage = '';
-    document.getElementById("validation-password").innerHTML = massage;
-    document.getElementById("check-box").checked ? massage = '' : massage = 'Please indicate that you agree to the terms';
-    document.getElementById("validation-check-box").innerHTML = massage;
+    let message1, message2, message3;
+    document.forms['frm'].login.value === "" ? message1 = 'Please enter your login' : message1 = '';
+    document.getElementById("validation-login").innerHTML = message1;
+    document.forms['frm'].password.value === "" ? message2 = 'Please enter your password' : message2 = '';
+    document.getElementById("validation-password").innerHTML = message2;
+    document.getElementById("check-box").checked ? message3 = '' : message3 = 'Please indicate that you agree to the terms';
+    document.getElementById("validation-check-box").innerHTML = message3;
+    //console.log(message1,message2,message2);
+    if(!message1 && !message2 && !message3){
+    	setTimeout( hide, 3000);
+    }
+    
+}
+function hide(){
+	document.getElementById("popup").style.visibility = "hidden";
+	document.getElementById("thank-you").innerHTML='Thank you';
 }

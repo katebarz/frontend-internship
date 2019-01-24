@@ -12,7 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh; }
 
-.btn-main {
+.btn-main, #thank-you {
   appearance: none;
   background: transparent;
   border: 0;
@@ -24,7 +24,7 @@ body {
   padding: 0 20px;
   transition: all .5s ease;
   position: absolute; }
-  .btn-main:hover {
+  .btn-main:hover, #thank-you:hover {
     transform: scale(1.15); }
 
 #popup {
@@ -96,8 +96,7 @@ body {
       border: none; }
       #popup form button:hover {
         background: #FF8087;
-        cursor: pointer;
-        transition: .3s; }
+        cursor: pointer; }
   #popup .close {
     position: absolute;
     right: -5px;
@@ -127,4 +126,4 @@ body {
     #popup div[id*='validation'][id*='check-box'] {
       margin-top: 15px; }
 
-/*# sourceMappingURL=_main.css.map */
+/*# sourceMappingURL=main.css.map */

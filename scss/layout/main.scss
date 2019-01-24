@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-.btn-main {
+.btn-main, #thank-you {
     appearance: none;
     background: transparent;
     border: 0;
@@ -31,7 +31,6 @@ body {
         transform: scale(1.15);
     }
 }
-
 #popup {
     visibility: hidden;
     display: flex;
@@ -123,7 +122,7 @@ body {
             &:hover {
                 background: #FF8087;
                 cursor: pointer;
-                transition: .3s;
+                //transition: .3s;
             }
         }
     }
