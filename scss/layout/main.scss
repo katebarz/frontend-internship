@@ -14,7 +14,8 @@ body {
     min-height: 100vh;
 }
 
-.btn-main, #thank-you {
+.btn-main,
+#thank-you {
     appearance: none;
     background: transparent;
     border: 0;
@@ -31,6 +32,11 @@ body {
         transform: scale(1.15);
     }
 }
+
+#thank-you {
+    cursor: context-menu;
+}
+
 #popup {
     visibility: hidden;
     display: flex;
@@ -164,8 +170,9 @@ body {
         margin: 0 10px;
         color: red;
         font-size: 13px;
-        &[id*='check-box']{
-          margin-top:15px;
+
+        &[id*='check-box'] {
+            margin-top: 15px;
         }
     }
 }

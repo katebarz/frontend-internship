@@ -12,7 +12,8 @@ body {
   justify-content: center;
   min-height: 100vh; }
 
-.btn-main, #thank-you {
+.btn-main,
+#thank-you {
   appearance: none;
   background: transparent;
   border: 0;
@@ -24,8 +25,12 @@ body {
   padding: 0 20px;
   transition: all .5s ease;
   position: absolute; }
-  .btn-main:hover, #thank-you:hover {
+  .btn-main:hover,
+  #thank-you:hover {
     transform: scale(1.15); }
+
+#thank-you {
+  cursor: context-menu; }
 
 #popup {
   visibility: hidden;
